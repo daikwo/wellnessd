@@ -1,0 +1,139 @@
+/*Global styling*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/*navigation styling*/
+.main_nav{
+    padding: 10px 80px;
+
+}
+.nav_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_item .logo{
+    height: 70px;
+    width: 70px;
+}
+.nav_item .logo img{
+    height: 100%;
+    width: 100%;
+}
+.nav_link{
+    display: flex;
+    gap: 25px;
+}
+.nav_link li a{
+    font-size: 20px;
+    color: grey;
+}
+.action{
+    display: none;
+}
+/*hero_section starts*/
+.hero_section{
+    padding:  0 80px;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+}
+.hero_left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero_left h1{
+    font-size: 65px;
+}
+.gradient{
+    color: transparent;
+    background-image: linear-gradient(to right, #0bab1b, #d45e22);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hero_right{
+    flex: 1;
+    height: 100%;
+}
+.hero_right img{
+    height: 180%;
+    width: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+}
+.hero_left_text{
+    line-height: 23px;
+}
+button{
+    color: black;
+    background-color: green;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 20px;
+    max-width: fit-content;
+
+}
+.mobile_menu{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding: 40px 20px;
+    top: -100%;
+    transition: 0.50s ease-in;
+
+}
+.mobile_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.reset{
+    top: 15% !important;
+}
+.cancel{
+    display: none;
+}
+/*hero responsiveness*/
+@media(max-width:834px){
+    .main_nav{
+        padding: 10px 16px;
+    }
+    .hero_section{
+        padding: 0 16px;
+    }
+    .hero_left h1{
+        font-size: 30px;
+    }
+}
+/*mobile screen*/
+@media(max-width:500px){
+
+}
+@media(max-width:500px){
+    .nav_link{
+        display: none;
+    }
+    .action{
+        display: block;
+    }
+    .hero_section{
+        padding: 40px 16px;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+}
+
